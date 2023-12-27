@@ -4,7 +4,7 @@
 
 ### Introduction
 
-&emsp;&emsp;當今音樂串流平台的普及促使人們更傾向使用串流服務聆聽音樂。這種趨勢不僅節省成本，也更加便捷。以Spotify為例。透過預測歌曲流行程度，我們可以協助音樂家決定歌曲上架與廣告策略，同時為串流平台提供熱門音樂推薦的重要參考依據。
+&emsp;&emsp;當今音樂串流平台的普及促使人們更傾向使用串流服務聆聽音樂。這種趨勢不僅節省成本，也更加便捷。以Spotify為例。透過預測歌曲流行程度，我們可以協助音樂家決定歌曲上架與廣告策略，同時為串流平台提供熱門音樂推薦的重要參考依據。  
 &emsp;&emsp;我們預計透過音樂串流平台提供的開放API，獲取歌曲相關資訊，包括作者、專輯、年份和風格等，以及利用預覽片段和外部資料集輔助，量化音樂特徵，例如歌唱比例、音調和動態範圍等，以達成預測歌曲流行程度的目標。
 
 ### Dataset
@@ -22,11 +22,11 @@
 閱讀相關論文，分析與討論要用哪種演算法來訓練模型
 目前考量到的相關演算法包括: 決策樹、隨機森林、線性回歸、SVM等等
 參考的方法: ++Predicting Music Popularity Using Music Charts++[^PredictingMusicPopularity]
-* **數據收集**
+* **數據收集**  
   &emsp;&emsp;Spotify的Web API收集來自"Top 50 Global lists"的數據，包括榜單的排名、排名日期、歌手名稱、歌曲標題、歌曲發行日期、歌曲時長、歌曲30秒試聽的URL、歌曲是否包含不雅語言、流行度分數。
-* **數據處理和特徵提取**
+* **數據處理和特徵提取**  
   &emsp;&emsp;使用Python套件LibROSA來提取五個聲學資訊，包括Mel-Frequency Cepstral Coefficients(MFCC), spectral centroid, spectral flatness, zero crossings,和節奏。
-* **實例提取**
+* **實例提取**  
   &emsp;&emsp;對每天的榜單，將其中受歡迎的Top 50歌曲視為正實例，未被選中的歌曲視為負實例
 * **模型訓練**
     * 使用不同的模型，包括AdaBoost、XGBoost、隨機森林、Naive Bayes(Gaussian和Bernoulli)、和SVM(使用RBF核心函數)，對處理後的數據進行訓練。
