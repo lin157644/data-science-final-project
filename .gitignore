@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache
+
+# Environments
+.env
+.venv
+.conda
+
+data/tracks
+data/tracks_data.csv
