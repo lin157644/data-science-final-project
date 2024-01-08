@@ -13,7 +13,7 @@
 ## Dataset
 
 * [**Kaggle: Spotify Tracks Dataset**](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
-    * 125種不同流派
+    * 125種不同曲風
     * \> 11000 筆歌曲資料
     * 包含預先量化的音訊特徵
 * [**Spotify API**](https://developer.spotify.com/documentation/web-api/reference/get-track)
